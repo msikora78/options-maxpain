@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+        #container {
+            width : 95%;
+            height: 800px;
+            margin: 8px auto;
+        }
+    </style>
+    <script type="application/javascript" src='/js/lib/jquery-2.0.0.js' ></script>
+    <script type="application/javascript" src='/js/lib/underscore.js' ></script>
+    <script type="application/javascript" src='/js/lib/Class.js' ></script>
+    <script type="application/javascript" src='/js/lib/flotr2.js' ></script>
+    <script type="application/javascript" src='/js/src/app.js' ></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+
+
+
+    <script>
+
+        $(function () {
+            App.renderOptionGraph(<%- JSON.stringify(optionData) %>);
+        });
+
+
+    </script>
+
+
+</head>
+<body>
+<div id="container"></div>
+
+</body>
+</html>
